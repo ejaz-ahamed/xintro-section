@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snap | Make remote work</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="header__home" aria-label="Snap home">
+        <img class="logo" src="./assets/images/logo.svg" alt="snap's logo" />
+      </a>
+
+      <button type="button" class="open-menu" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <img src="./assets/images/icon-menu.svg" alt="" />
+      </button>
+
+      <div class="overlay"></div>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <button type="button" class="close-menu" aria-label="Close menu">
+          <img src="./assets/images/icon-close-menu.svg" alt="" />
+        </button>
+
+        <ul class="nav__list">
+          <li class="nav__item nav__item--features">
+            <button type="button" class="nav-link" aria-expanded="false" aria-controls="features-menu">
+              Features
+              <img class="nav-link__arrow" src="./assets/images/icon-arrow-down.svg" alt="" />
+            </button>
+            <ul class="dropdown-list" id="features-menu">
+              <li class="dropdown-link">
+                <a href="#" aria-label="todo-list"><img src="./assets/images/icon-todo.svg" alt="" />Todo List</a>
+              </li>
+              <li class="dropdown-link">
+                <a href="#" aria-label="calendar"><img src="./assets/images/icon-calendar.svg" alt="" />Calendar</a>
+              </li>
+              <li class="dropdown-link">
+                <a href="#" aria-label="reminders"><img src="./assets/images/icon-reminders.svg" alt="" />Reminders</a>
+              </li>
+              <li class="dropdown-link">
+                <a href="#" aria-label="planning"><img src="./assets/images/icon-planning.svg" alt="" />Planning</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__item nav__item--company">
+            <button type="button" class="nav-link" aria-expanded="false" aria-controls="company-menu">
+              Company
+              <img class="nav-link__arrow" src="./assets/images/icon-arrow-down.svg" alt="" />
+            </button>
+            <ul class="dropdown-list" id="company-menu">
+              <li class="dropdown-link"><a href="#" aria-label="history">History</a></li>
+              <li class="dropdown-link"><a href="#" aria-label="our-team">Our Team</a></li>
+              <li class="dropdown-link"><a href="#" aria-label="blog">Blog</a></li>
+            </ul>
+          </li>
+
+          <li class="nav__item"><a href="#" class="nav__plain-link">Careers</a></li>
+          <li class="nav__item"><a href="#" class="nav__plain-link">About</a></li>
+        </ul>
+
+        <div class="registration">
+          <button type="button" class="btn-login">Login</button>
+          <button type="button" class="btn-register">Register</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <picture class="hero__picture">
+        <source media="(min-width: 768px)" srcset="./assets/images/image-hero-desktop.png" />
+        <img src="./assets/images/image-hero-mobile.png" alt="Person smiling while working on a laptop" />
+      </picture>
+
+      <div class="hero__content">
+        <div class="text-content">
+          <h1>Make remote work</h1>
+          <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+          <a href="#" class="btn-learn">Learn more</a>
+        </div>
+
+        <ul class="clients" aria-label="Our clients">
+          <li><img src="./assets/images/client-databiz.svg" alt="Databiz" /></li>
+          <li><img src="./assets/images/client-audiophile.svg" alt="Audiophile" /></li>
+          <li><img src="./assets/images/client-meet.svg" alt="Meet" /></li>
+          <li><img src="./assets/images/client-maker.svg" alt="Maker" /></li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by <a href="https://crio.do" target="_blank" rel="noopener noreferrer">Crio.do</a>.
+      Coded by <a href="https://github.com/ejaz-ahamed" target="_blank" rel="noopener noreferrer">ejaz-ahamed</a>.
+    </footer>
+  </body>
+</html>
